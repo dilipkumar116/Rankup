@@ -1,0 +1,16 @@
+.services h2, .contact h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.services h2::after, .contact h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    animation: gradientSlide 3s infinite;
